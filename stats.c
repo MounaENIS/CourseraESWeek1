@@ -59,87 +59,40 @@ void main() {
 /* Add other Implementation File Code Here */
 void swap(unsigned char* xp, unsigned char* yp)
 {
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
+    
 }
 
 void sort_array(unsigned char *array, int length)
 {
-	int min_idx =0;
-  /*SORT*/
-  for (int i = 0; i <length - 1; i++) {
- 
-        // Find the minimum element in unsorted array
-        min_idx = i;
-        for (int j = i + 1; j < length; j++)
-            if (array[j] > array[min_idx])
-                min_idx = j;
- 
-        // Swap the found minimum element
-        // with the first element
-        swap(&array[min_idx], &array[i]);
-	}
+	
 }
 
 
 double find_median(unsigned char *array, unsigned int length)
 {
-	double median =0;
-	if (length % 2 != 0)
-        median = array[length / 2];
-  
-    else median = (double)(array[(length - 1) / 2] + array[length / 2]) / 2.0;
-   
-    
-    return median;
-   
+	
 	
 } 
 
 
 int find_mean(unsigned char *array, unsigned int length) 
 {
-	int mean =0;
-  for (int i=0;i<length;i++)
-  {
-	  mean = mean + array[i]  ;
-  }
-  
-  mean = mean / length;
-  return mean;
- 	
+	
 }
 
 
 unsigned char find_maximum(unsigned char *array, int length) 
 {
-	 unsigned char max = array[0];
-  for (int i=1;i<length;i++)
-  {
-	  if (array[i] > max) max = array[i];
-	 
-	  
-  }
-   return max;
 }
 
 unsigned char find_minimum(unsigned char *array, int length)
 {
-	unsigned char min = array[0];
-  for (int i=1;i<length;i++)
-  {
-	  if (array[i] < min) min = array[i];  
-  }
-  return min;
+	
 }
 
 
 void print_array(unsigned char *array, unsigned int length) 
 {
-	for (int i=0;i<length;i++)
-	{
-		printf ("Array[%d]=%d \n",i,array[i]);
-	}
+	
 }
 
