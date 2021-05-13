@@ -37,26 +37,34 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+	
+  print_statistics(test,SIZE);
+
 
   sort_array(test, SIZE);
 
   print_array(test, SIZE);
-  
-  
- 
-  printf ("max = %d \n", find_maximum(test, SIZE));
-  
-  
-  printf ("min = %d \n", find_minimum(test, SIZE));
-  
-  printf ("mean = %d \n", find_mean(test, SIZE));
-  
-  printf ("median = %d \n", (int)(find_median(test, SIZE)));
 	
 
 }
 
 /* Add other Implementation File Code Here */
+
+void print_statistics(unsigned char *test,int size) {
+
+	printf("Median is %d\n", find_median(test, size));
+	printf("Mean is %d\n", find_mean(test, size));
+	printf("Maximum is %d\n", find_maximum(test, size));
+	printf("Minimum is %d\n", find_minimum(test, size));
+
+
+
+}
+
+
+
+
+
 void swap(unsigned char* xp, unsigned char* yp)
 {
     int temp = *xp;

@@ -23,7 +23,6 @@
 
 /* Add Your Declarations and Function Comments here */ 
 
-void swap(unsigned char* xp, unsigned char* yp);
 /**
  * @brief exchange between two data in the array
  *
@@ -35,8 +34,9 @@ void swap(unsigned char* xp, unsigned char* yp);
  *
  * @return the two variables are exchanged
  */
+void swap(unsigned char* xp, unsigned char* yp);
 
-double find_median(unsigned char *array, unsigned int length);
+
 /**
  * @brief find_median
  *
@@ -47,9 +47,9 @@ double find_median(unsigned char *array, unsigned int length);
  *
  * @return the median rounded down to the nearest integer
  */
+double find_median(unsigned char *array, unsigned int length);
 
 
-void print_array(unsigned char *array, unsigned int length);
 /**
  * @brief prints the data array
  *
@@ -60,10 +60,10 @@ void print_array(unsigned char *array, unsigned int length);
  *
  * @return the data array is printed
  */
+void print_array(unsigned char *array, unsigned int length);
 
 
 
-int find_mean(unsigned char *array, unsigned int length);
 /**
  * @brief Function: find_mean
  *
@@ -74,9 +74,9 @@ int find_mean(unsigned char *array, unsigned int length);
  *
  * @return the mean rounded down to the nearest integer
  */
+int find_mean(unsigned char *array, unsigned int length);
 
 
-unsigned char find_maximum(unsigned char *array, int length);
 /**
  * @brief Function: find_maximum
  *
@@ -87,8 +87,9 @@ unsigned char find_maximum(unsigned char *array, int length);
  *
  * @return the max of the array
  */
+unsigned char find_maximum(unsigned char *array, int length);
 
-unsigned char find_minimum(unsigned char *array, int length);
+
 /**
  * @brief Function: find_minimum
  *
@@ -99,9 +100,9 @@ unsigned char find_minimum(unsigned char *array, int length);
  *
  * @return the min of the array
  */
+unsigned char find_minimum(unsigned char *array, int length);
 
 
-void sort_array(unsigned char *array, int length);
 /**
  * @brief sorts the array form the largest data to the smallest one
  *
@@ -112,6 +113,16 @@ void sort_array(unsigned char *array, int length);
  *
  * @return the array is sorted
  */
+void sort_array(unsigned char *array, int length);
+
+
+/**
+ * @brief Function will call all statistical fucntions which
+ * will return back their respective outputs, which will get printed by this function
+ * @param It takes the test array as an input
+ * @return it returns the Nothing
+ */
+void print_statistics(unsigned char *test,int size);
 
 
 #endif /* __STATS_H__ */
